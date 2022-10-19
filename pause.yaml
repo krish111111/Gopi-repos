@@ -1,0 +1,11 @@
+---
+- name: Using pause module
+  hosts: all
+  become: true
+  tasks:
+  - name: using pause1 module
+    pause:
+      seconds: 30
+  - name: using pause2 module
+    pause:
+      seconds: 30
